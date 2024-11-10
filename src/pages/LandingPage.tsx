@@ -1,7 +1,7 @@
 import { LogoLand } from "../assets/logo";
 import { useAuth } from "../context/AuthContext";
 import { Login, Logout } from "../components/LoginLandingPage"; 
-
+import videoImage from '../assets/video_1.png';
 import { Link } from "react-router-dom";
 
 export const LandingPage = () => {
@@ -16,7 +16,7 @@ export const LandingPage = () => {
       <div className="flex w-[70vw] h-[80vh] gap-4">
         <article className="w-1/2 h-full">
           <div className=" w-full">
-            <img className="w-full h-[50vh] object-cover" src="../assets/video_1.png" alt="" />
+            <img className="w-full h-[50vh] object-cover" src={videoImage} alt="" />
           </div>
           <Link to={`/main/`} className="w-full h-[30vh] bg-custom-green flex justify-center items-center" >
             < LogoLand/>
